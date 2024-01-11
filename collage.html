@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture collage</title>
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .row{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom:50px ;
+        }
+        .row>div{
+            flex: 1;
+        }
+        .verticle-collage{
+            height: 50%;
+            width: 100%;
+        }
+      .squre-collage{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My picture collage</h1>
+       
+    </header>
+    <main>
+        <section>
+            <div class="row">
+                <img src="./images/A.jpg" alt="">
+            </div>
+            <div class="row">
+                <div>        
+                            <img src="./images/B.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/c.jpg" alt="">
+
+                </div>
+
+                <div class="verticle-collage">
+                    <img src="./images/d.jpg" alt="">
+                    <img src="./images/e.jpg" alt="">
+                </div>
+            </div>
+  <div class="row">
+    <div>
+        <img src="./images/F.jpg" alt="">
+    </div>
+    <div class="squre-collage">
+        <img src="./images/G.jpg" alt="">
+        <img src="./images/G.jpg" alt="">
+        <img src="./images/G.jpg" alt="">
+        <img src="./images/G.jpg" alt="">
+    </div>
+    <div>
+        <img src="./images/H.jpg" alt="">
+       </div>
+
+
+  </div>
+   
+        </section>
+    </main>
+</body>
+</html>
